@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Jost&family=Kanit&family=Libre+Franklin:wght@300&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@300;400&family=PT+Serif&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Rubik+Vinyl&family=Russo+One&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 30px 0px;
+    font-family: Nunito Sans;
+    align-items: center;
+    border-bottom: 1px solid rgb(232, 230, 228);
+
+}
+
+header .logo {
+    margin-right: 50px;
+}
+
+header .img-menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.header-menu-list ul {
+    list-style-type: none;
+    display: flex;
+
+
+}
+
+.header-menu-list ul li a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: rgba(5, 6, 10, 1);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+
+}
+
+
+.header .icons {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+header .icons .img1 {
+    position: relative;
+}
+
+header .icons img {
+    margin-left: 30px;
+    position: relative;
+
+}
+
+header .icons .card {
+    box-shadow: 2px 2px 2px 3px rgb(238, 238, 243);
+    padding: 20px 50px;
+    position: absolute;
+    background-color: rgb(253, 252, 250);
+    right: -180%;
+    top: 100%;
+    border-radius: 5px;
+    display: none;
+
+}
+
+header .icons .img1 .card .card-header {
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(244, 237, 237);
+    margin: 0;
+}
+
+header .icons .img1 .card p {
+
+    text-align: center;
+    padding: 40px 100px;
+}
+
+header .icons #img-2 {
+    width: 40px;
+    border: 1px solid orange;
+    border-radius: 50%;
+
+}
+
+.header-menu-list ul li:hover {
+    border-bottom: 5px solid orange;
+    transition-duration: .5s;
+}
+
+/*Description Section*/
+.description-section {
+    display: flex;
+    padding: 20px 50px;
+    font-family: Nunito Sans;
+}
+
+.description-image {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 80px;
+}
+
+.description-image .real-image .main-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.description-image .thumbnail-section {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.description-image .thumbnail-section img {
+    width: 90px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+
+}
+
+.description-section .details-section {
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.details-section .details-header span {
+    color: orange;
+    font-size: 20px;
+}
+
+.details-section .details-header .price span {
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.details-section .details-header h3 {
+    color: orange;
+
+
+}
+
+.description-section .details-section p {
+    margin-top: 10px;
+    line-height: 30px;
+    color: rgb(171, 168, 168);
+}
+
+.details-section .details-header h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 20px;
+}
+
+.details-section .details-header h2 {
+    margin-top: 20px;
+}
+
+.details-section .details-footer {
+    margin-top: 20px;
+
+}
+
+.details-section .details-footer .amount {
+    display: inline-block;
+    background-color: rgb(237, 242, 243);
+    padding: 15px 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+
+}
+
+.details-section .details-footer .amount img,
+span {
+    margin: 0px 10px;
+}
+
+.details-section .details-footer a {
+    text-decoration: none;
+    background-color: orange;
+    padding: 15px 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details-section .details-footer a img {
+    margin-right: 10px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+
+@media screen and (max-width:500px) {
+    .header {
+        padding: 30px 20px;
+
+
+    }
+
+    .logo {
+        display: flex;
+        margin: 0px 0px;
+
+    }
+
+    .logo .menu-bar {
+        display: flex;
+        margin-right: 10px;
+
+    }
+
+    .header .img-menu {
+        flex-direction: column;
+    }
+
+    .header-menu-list ul {
+        margin-top: 20px;
+        flex-direction: column;
+        background-color: rgb(183, 203, 203);
+        display: none;
+
+    }
+
+    .header-menu-list ul li {
+        margin-top: 20px;
+    }
+
+    .menu-bar {
+        display: flex;
+    }
+
+    .header .icons img {
+
+        margin-left: 15px;
+        position: relative;
+
+
+    }
+
+    .description-section {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .description-image {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+    }
+
+    .description-image .real-image img {
+        width: 100vw;
+        height: 40vh;
+
+
+    }
+
+    .description-image .real-image .prev {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+
+    }
+
+    .description-image .real-image .next {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+
+
+
+    }
+
+    .description-image .thumbnail-section {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .details-section .details-header .price {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .details-section .details-footer .amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(237, 242, 243);
+        padding: 15px 20px;
+        margin-right: 0px;
+
+
+    }
+
+    .details-section .details-footer a {
+        display: block;
+        margin-top: 20px;
+
+    }
+}
